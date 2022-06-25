@@ -1,0 +1,10 @@
+package inheritance;
+
+public class MainClassC extends DerivedClassB{
+
+	public static void main(String[] args) {
+		DerivedClassB objClassB = new DerivedClassB();
+		objClassB.PrintPropertyofClassA();
+	}
+
+}

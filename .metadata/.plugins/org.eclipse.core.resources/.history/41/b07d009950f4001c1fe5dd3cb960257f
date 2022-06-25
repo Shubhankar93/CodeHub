@@ -1,0 +1,14 @@
+package WindowHandling;
+
+import myUtilities.Utilities;
+
+public class ManageWindows {
+
+	public static void main(String[] args) {
+		String url = "https://www.hyrtutorials.com/p/window-handles-practice.html";
+		Utilities.initiateBrowser(driver, url);
+		driver.manage().window().maximize();
+
+	}
+
+}

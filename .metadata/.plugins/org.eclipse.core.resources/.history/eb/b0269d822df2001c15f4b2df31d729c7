@@ -1,0 +1,19 @@
+package MouseActions;
+
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+
+import myUtilities.Utilities;
+
+public class ScrollupScrolldown {
+	public static WebDriver driver;
+	static String url = "https://www.globalsqa.com/demo-site/draganddrop/";
+
+	public static void main(String[] args) {
+		driver = Utilities.initiateBrowser(driver, url);
+		JavascriptExecutor js =  (JavascriptExecutor)driver;
+		js.executeScript("window.scrollTo(0,1000)");
+
+	}
+
+}

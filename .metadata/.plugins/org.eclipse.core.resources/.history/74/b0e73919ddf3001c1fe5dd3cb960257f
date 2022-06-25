@@ -1,0 +1,10 @@
+package string;
+
+public class FindDuplicates {
+
+	public static void main(String[] args) {
+		String s = "you are a SDET and you are good tester";
+
+	}
+
+}

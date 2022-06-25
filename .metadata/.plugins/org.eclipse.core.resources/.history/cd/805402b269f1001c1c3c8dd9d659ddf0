@@ -1,0 +1,8 @@
+package takesScreenshotDemo.sdsd;
+
+public class Snippet {
+	public static void main(String[] args) {
+		takesScreenshotDemo
+	}
+}
+

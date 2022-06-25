@@ -1,0 +1,19 @@
+package myUtilities;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+
+public class Utilities {
+	public static void initiateBrowser (WebDriver driver){
+		ChromeOptions options = new ChromeOptions();
+		options.addArguments("--headless");
+		String driverPath = System.getProperty("user.dir") + "\\Drivers\\chromedriver.exe";
+		System.out.println(driverPath);
+		System.setProperty("webdriver.chrome.driver", driverPath);
+		 driver = new ChromeDriver();
+		driver.get("https://www.google.com/");
+		driver.manage().window().maximize();
+		
+	}
+}

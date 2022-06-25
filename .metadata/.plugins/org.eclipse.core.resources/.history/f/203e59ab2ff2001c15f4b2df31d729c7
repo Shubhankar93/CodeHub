@@ -1,0 +1,24 @@
+package MouseActions;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+import myUtilities.Utilities;
+
+public class ScrollupScrolldown {
+	public static WebDriver driver;
+	static String url = "https://www.globalsqa.com/demo-site/draganddrop/";
+
+	public static void main(String[] args) {
+		driver = Utilities.initiateBrowser(driver, url);
+		WebElement element = driver.findElement(By.xpath("//*[@id='menu-item-2817']/a/span[2]"));
+		WebElement element1 = driver.findElement(By.xpath("//*[@id='gallery']/li[2]/img"));
+		JavascriptExecutor js =  (JavascriptExecutor)driver;
+		js.executeScript("window.scrollTo(arguments[0],arguments[1])", element.getLocation().x, element.getLocation().y);
+		js.executeScript("window.scrollTo(arg[0],arg[1])", element.getLocation().x, element.getLocation().y);
+
+	}
+
+}

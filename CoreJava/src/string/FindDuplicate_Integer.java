@@ -1,0 +1,26 @@
+package string;
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class FindDuplicate_Integer {
+
+	public static void main(String[] args) {
+
+		
+		Integer[] nums = {2,4,5,2,3,5,5};
+		int length = nums.length;
+		Set<Integer> val = new HashSet<Integer> ();
+		for (int i=0;i<length-1;i++){
+			for (int j=i+1;j<length;j++){
+				if (nums[i]==(nums[j])){
+					val.add(nums[i]);
+				}
+			}
+		}
+System.out.println(val);
+	
+
+	}
+
+}

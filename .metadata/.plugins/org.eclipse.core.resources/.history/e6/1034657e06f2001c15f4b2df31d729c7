@@ -1,0 +1,15 @@
+package frameHandling;
+
+import org.openqa.selenium.WebDriver;
+
+import myUtilities.Utilities;
+
+public class FrameHandleing_Demo {
+	public static WebDriver driver;
+	static String  url = "https://fwww.facebook.com";
+	public static void main(String[] args) {
+		Utilities.initiateBrowser(driver, url)
+
+	}
+
+}

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Regression Suite">
+	<test name="Web App Test">
+		<groups>
+			<run>
+				<include name="UAT" />
+			</run>
+		</groups>
+		<parameter name="uid" value="Admin" />
+		<parameter name="pass" value="admin123" />
+
+
+		<classes>
+			<class name="tests.LoginTest">
+				<methods>
+					<include name="VerifyApplicationLunch" />
+					<include name="AssignLeave" />
+				</methods>
+			</class>
+		</classes>
+
+	</test>
+</suite>

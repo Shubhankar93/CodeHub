@@ -1,0 +1,15 @@
+package miscellaneous;
+
+import constructor_In_AbstractClass.Class_A;
+
+
+public class Test_1 extends Class_A{
+
+	public static void main(String[] args) {
+		Test_1 t1 = new Test_1();
+		int s = t1.hashCode();
+		System.out.println(t1);
+
+	}
+
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Regression Suite">
+	<parameter name="uid" value="Admin" />
+	<parameter name="pass" value="admin123" />
+	<test name="Web App Test">
+		<groups>
+			<run>
+				<include name="SmokeTest" />
+			</run>
+		</groups>
+
+		<classes>
+			<class name="tests.LoginTest">
+
+			</class>
+		</classes>
+
+	</test>
+</suite>

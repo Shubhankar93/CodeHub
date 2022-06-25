@@ -1,0 +1,39 @@
+package brokenLink;
+
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.net.URLConnection;
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+
+public class BrokenLink_Demo {
+
+	public static void main(String[] args) throws Exception  {
+		ChromeOptions options = new ChromeOptions();
+		options.addArguments("--headless");
+		String driverPath = System.getProperty("user.dir") + "\\Drivers\\chromedriver.exe";
+		System.out.println(driverPath);
+		System.setProperty("webdriver.chrome.driver", driverPath);
+		WebDriver driver = new ChromeDriver();
+		driver.get("https://www.google.com/");
+		driver.manage().window().maximize();
+		List<WebElement> elements = driver.findElements(By.tagName("a"));
+		
+		for (WebElement we : elements) {
+			System.out.println(we.getAttribute("href"));
+			URL url = new URL (we.getAttribute("href"));
+			URLConnection con = url.openConnection();
+			HTTPurlConnection httpcon = con; 
+			
+
+		}
+		driver.quit();
+
+	}
+
+}

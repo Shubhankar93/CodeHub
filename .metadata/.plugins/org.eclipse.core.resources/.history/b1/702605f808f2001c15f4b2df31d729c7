@@ -1,0 +1,19 @@
+package frameHandling;
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import myUtilities.Utilities;
+
+public class FrameHandleing_Demo {
+	public static WebDriver driver;
+	static String url = "https://www.hyrtutorials.com/p/frames-practice.html";
+
+	public static void main(String[] args) {
+		driver = Utilities.initiateBrowser(driver, url);
+		List<WebElement> frames = driver.findElements(By.tagName("iFrame"));
+		
+		
+	}
+
+}

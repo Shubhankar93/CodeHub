@@ -1,0 +1,24 @@
+package takesScreenshotDemo;
+
+
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.remote.RemoteWebDriver;
+
+public class ScreenshotDemo extends RemoteWebDriver{
+
+	public static void main(String[] args) {
+		System.out.println("abc");
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\SHUBHANKAR\\git\\SeleniumTraining\\SeleniumWithJAVA\\selenium-server-standalone-3.141.59.jar");
+		ChromeDriver driver = new ChromeDriver();
+		driver.get("www.google.com");
+		int i =5; 
+		String s = String.valueOf(i);
+		
+	
+		TakesScreenshot ts = (TakesScreenshot)driver;
+		ts.getScreenshotAs(OutputType.FILE);
+	}
+
+}

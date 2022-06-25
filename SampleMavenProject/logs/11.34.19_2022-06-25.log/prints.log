@@ -1,0 +1,5 @@
+23:34:20.256 [main] INFO  businessFunctions.LoginPage - Username entered
+23:34:20.521 [main] INFO  businessFunctions.LoginPage - Password entered
+23:35:18.120 [main] INFO  businessFunctions.LoginPage - Clicked on Login Button
+23:35:46.419 [main] INFO  businessFunctions.HomePage - Clicked on Assign Leave link
+23:35:56.980 [main] INFO  businessFunctions.LoginPage - Username entered
