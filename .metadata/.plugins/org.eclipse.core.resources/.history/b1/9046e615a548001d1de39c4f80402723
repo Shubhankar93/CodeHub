@@ -1,0 +1,16 @@
+package dataType;
+
+public class DataTypeExample {
+
+	public static void main(String[] args) {
+		
+		
+		
+		int[] a = new int[10];
+		for ( int d : a)// For each loop 
+		{
+			System.out.println(d);
+		}	
+	}
+
+}

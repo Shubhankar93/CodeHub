@@ -1,0 +1,9 @@
+package responseCode;
+public class ValidateResponseCode {
+
+	public static void main(String[] args) {
+		
+RestAssured.baseURI = 
+	}
+
+}

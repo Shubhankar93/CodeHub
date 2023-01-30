@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Regression Suite]">
+  <parameter name="uid" value="Admin"/>
+  <parameter name="pass" value="admin123"/>
+  <test name="Web App Test(failed)">
+    <groups>
+      <run>
+        <include name="SmokeTest"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="tests.LoginTest">
+        <methods>
+          <include name="endTest"/>
+          <include name="AssignLeave" invocation-numbers="0"/>
+          <include name="VerifyApplicationLunch"/>
+        </methods>
+      </class> <!-- tests.LoginTest -->
+    </classes>
+  </test> <!-- Web App Test(failed) -->
+</suite> <!-- Failed suite [Regression Suite] -->

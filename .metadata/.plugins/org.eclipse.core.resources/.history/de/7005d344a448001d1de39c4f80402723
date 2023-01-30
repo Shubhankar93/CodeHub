@@ -1,0 +1,14 @@
+package dataType;
+
+public class DataTypeExample {
+
+	public static void main(String[] args) {
+		
+		double t = 10.54353534 ;
+		float f = 10.5f ;
+		int  d  = 10 ;
+		double a = d; 
+		int c[] = new int[10];
+	}
+
+}

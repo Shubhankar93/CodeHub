@@ -1,0 +1,10 @@
+package waits;
+
+public class WebDriverWaitsDemo {
+
+	public static void main(String[] args) {
+		Utilities.initiateBrowser
+
+	}
+
+}

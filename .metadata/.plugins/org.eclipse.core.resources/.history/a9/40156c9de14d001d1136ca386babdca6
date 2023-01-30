@@ -1,0 +1,13 @@
+package extentsReport;
+
+import com.aventstack.extentreports.ExtentReports;
+
+public class ExtentsReport {
+
+	public static void main(String[] args) {
+		ExtentReports er = new ExtentReports ();
+		ExtentSparkReporters sr = new ExtentSparkReporters();
+
+	}
+
+}

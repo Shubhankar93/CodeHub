@@ -1,0 +1,32 @@
+package staticKeyword;
+	
+public class StaticVariable_1 {
+	  int empid = 3;
+	
+	public void set(int i){
+		empid = i ;
+	}
+	public void show(){
+		System.out.println("value-" +  this.empid);
+	}
+	
+	public static void main(String[] args) {
+		StaticVariable obj = new StaticVariable();
+		obj.set(10);
+		obj.show();
+		
+		
+		StaticVariable obj2 = new StaticVariable();
+		obj2.set(40);
+		obj2.show();
+		
+		
+		obj.show();
+		System.out.println("abc");
+		
+		
+		
+
+	}
+
+}

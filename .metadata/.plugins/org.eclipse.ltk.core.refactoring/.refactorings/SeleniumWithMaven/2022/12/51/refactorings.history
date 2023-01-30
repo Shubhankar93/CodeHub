@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;SeleniumWithMaven/Data/SessionId.txt&apos; to &apos;PortNo.txt&apos;" description="Rename resource &apos;SessionId.txt&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Data/SessionId.txt" name="PortNo.txt" stamp="1670866572758" updateReferences="true"/>
+</session>

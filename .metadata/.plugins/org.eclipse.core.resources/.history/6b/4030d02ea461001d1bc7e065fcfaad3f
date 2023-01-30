@@ -1,0 +1,16 @@
+package tanukaGhosh;
+
+public class stringReverse {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+	StringBuffer newValue = new StringBuffer();	
+    String s="tanuka";
+    for(int i=s.length();i>=0;i--) {
+    	newValue=newValue.append(s.charAt(i));
+    }
+    System.out.println(newValue);
+	}
+
+}

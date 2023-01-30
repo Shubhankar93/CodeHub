@@ -1,0 +1,22 @@
+package waits;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+
+
+import myUtilities.Utilities;
+
+public class WebDriverWaitsDemo {
+
+	public static void main(String[] args) {
+		
+		WebDriver driver = null;
+		String url = "https://www.makemytrip.com/";
+		Utilities.initiateBrowser(driver, url);
+		WebDriverWait wait = new WebDriverWait(driver, 30);
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[contains(text(),'COMPOSE')]")));
+
+	}
+
+}

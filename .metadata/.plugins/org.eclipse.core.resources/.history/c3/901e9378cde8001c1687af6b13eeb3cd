@@ -1,0 +1,23 @@
+package Test;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
+
+public class Test_test {
+
+	public static void main(String[] args) {
+		DesiredCapabilities cap = new DesiredCapabilities();
+		cap.acceptInsecureCerts();
+		
+		
+		String driverPath = System.getProperty("user.dir")+ "\\Drivers\\chromedriver.exe";
+		System.out.println(driverPath);
+		System.setProperty("webdriver.chrome.driver",driverPath );
+		WebDriver driver = new ChromeDriver();
+
+	}
+
+}

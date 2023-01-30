@@ -1,0 +1,19 @@
+package dropdownHandle;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+import myUtilities.Utilities;
+
+public class DynamicDD {
+
+	public static void main(String[] args) {
+		WebDriver driver = null;
+		String url = "https://codepen.io/david-arun/pen/LrqmoY";
+		driver = Utilities.initiateBrowser(driver, url);
+		driver.findElement(By.xpath("//*[@id=\"listBox\"]"));
+		
+
+	}
+
+}

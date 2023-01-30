@@ -1,0 +1,21 @@
+package stringPrograms;
+
+public class AlternateSubStringReverse {
+	public static void main(String[] args) {
+		String name = "I Love My India";
+		String[] nameSplit = name.split(" ");
+		StringBuffer newName = new StringBuffer(nameSplit[0]);
+		for (int i=1; i<nameSplit.length; i++) {
+			
+			if (i%2 == 0) {
+				StringBuilder temp = new StringBuilder(nameSplit[i]) ;
+				newName = newName.append(temp.reverse());
+			}
+			else if {
+				
+			}
+		}
+		
+		System.out.println(newName);
+	}
+}

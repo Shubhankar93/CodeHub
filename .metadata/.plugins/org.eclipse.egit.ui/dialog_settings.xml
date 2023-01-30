@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="CommitDialog.authorValues">
+		<item value="Shubhankar Ghosh &lt;Shubhankar Ghosh@DESKTOP-JTFC6NM&gt;"/>
+	</list>
+	<list key="CommitDialog.committerValues">
+		<item value="Shubhankar Ghosh &lt;Shubhankar Ghosh@DESKTOP-JTFC6NM&gt;"/>
+	</list>
+	<section name="GitImportWizard">
+	</section>
+	<section name="GitCommitMessageComponent">
+	</section>
+	<section name="org.eclipse.egit.ui.internal.staging.StagingView">
+		<item value="416,583" key="STAGING_SASH_FORM_WEIGHT"/>
+		<item value="false" key="sortItemState"/>
+		<item value="500,500" key="HORIZONTAL_SASH_FORM_WEIGHT"/>
+	</section>
+</section>

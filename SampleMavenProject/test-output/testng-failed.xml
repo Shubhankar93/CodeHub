@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [test_suite]">
+  <test name="Loan(failed)">
+    <parameter name="uid" value="Admin"/>
+    <parameter name="pass" value="admin123"/>
+    <groups>
+      <run>
+        <include name="SmokeTest"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="tests.LoginTest">
+        <methods>
+          <include name="endSuite"/>
+          <include name="endTest"/>
+          <include name="VerifyApplicationLunch" invocation-numbers="0"/>
+          <include name="setUp"/>
+          <include name="startSuite"/>
+        </methods>
+      </class> <!-- tests.LoginTest -->
+    </classes>
+  </test> <!-- Loan(failed) -->
+</suite> <!-- Failed suite [test_suite] -->

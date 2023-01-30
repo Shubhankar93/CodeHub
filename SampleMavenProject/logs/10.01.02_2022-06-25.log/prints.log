@@ -1,0 +1,5 @@
+22:01:03.275 [main] INFO  businessFunctions.LoginPage - Username entered
+22:01:03.542 [main] INFO  businessFunctions.LoginPage - Password entered
+22:01:10.823 [main] INFO  businessFunctions.LoginPage - Clicked on Login Button
+22:04:32.494 [main] INFO  businessFunctions.HomePage - Clicked on Assign Leave link
+22:04:33.006 [main] INFO  businessFunctions.HomePage - Name entered as Robert Ferry

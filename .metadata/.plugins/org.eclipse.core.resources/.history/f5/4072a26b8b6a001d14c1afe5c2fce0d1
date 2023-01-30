@@ -1,0 +1,46 @@
+package test.APIAutomation;
+import org.testng.annotations.Test;
+
+import io.restassured.RestAssured;
+import io.restassured.path.json.JsonPath;
+import io.restassured.response.Response;
+import payloads.PayLoad1;
+
+import static io.restassured.RestAssured.*;
+
+
+public class VerifyResponseCodeTest {	
+	@Test (enabled=false)   
+	public void VerifyResponseCode200() {
+		System.out.println("abc");
+		Response res = RestAssured.get("https://www.google.co.in/");
+		int statusCode = res.getStatusCode();
+		System.out.println(statusCode);	
+	}
+	
+	@Test
+	public void callAPI() {
+		RestAssured.baseURI= "https://rahulshettyacademy.com";
+		given().log().all().queryParam("key", "qaclick123").headers("content-type", "application/json").body(PayLoad1.PayLoad())
+		.when().post("maps/api/place/add/json")
+		.then().assertThat().log().all().statusCode(200).header("server", "Apache/2.4.41 (Ubuntu)");
+		
+		/*String response = given().queryParam("key", "qaclick123").headers("content-type", "application/json").body(PayLoad1.PayLoad())
+		.when().post("maps/api/place/add/json")
+		.then().assertThat().statusCode(200).extract().response().asString();
+		
+		System.out.println("++++++++++++++++++++++++++++++++");
+		
+		System.out.println(response);
+		JsonPath js = new JsonPath(response);
+		String placeId= js.getString("place_id");
+		System.out.println("Place Id = " +placeId);
+		
+		String server= js.getString("Server");
+		System.out.println("Server = " +server);*/
+		
+		
+		
+		
+	}
+}

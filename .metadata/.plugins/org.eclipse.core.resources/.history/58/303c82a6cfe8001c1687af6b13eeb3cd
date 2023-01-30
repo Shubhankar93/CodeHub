@@ -1,0 +1,26 @@
+package Test;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
+
+public class Test_test {
+
+	public static void main(String[] args) {
+		//DesiredCapabilities cap = new DesiredCapabilities();
+		//cap.setAcceptInsecureCerts(true);
+		ChromeOptions options = new ChromeOptions();
+		options.merge(cap);
+		
+		String driverPath = System.getProperty("user.dir")+ "\\Drivers\\chromedriver.exe";
+		System.out.println(driverPath);
+		System.setProperty("webdriver.chrome.driver",driverPath );
+		WebDriver driver = new ChromeDriver(options);
+		driver.get("https://expired.badssl.com/");
+
+	}
+
+}

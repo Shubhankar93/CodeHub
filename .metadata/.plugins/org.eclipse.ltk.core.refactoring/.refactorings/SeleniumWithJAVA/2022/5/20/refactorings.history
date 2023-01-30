@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;abstractClass.AbstractClassExample&apos; to &apos;AbstractClassExample_A&apos;&#x0D;&#x0A;- Original project: &apos;SeleniumWithJAVA&apos;&#x0D;&#x0A;- Original element: &apos;abstractClass.AbstractClassExample&apos;&#x0D;&#x0A;- Renamed element: &apos;abstractClass.AbstractClassExample_A&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;AbstractClassExample&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;abstractClass{AbstractClassExample.java[AbstractClassExample" matchStrategy="1" name="AbstractClassExample_A" qualified="false" references="true" similarDeclarations="false" stamp="1652529539239" textual="false" version="1.0"/>
+</session>

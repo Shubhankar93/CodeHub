@@ -1,0 +1,16 @@
+package dropdownHandle;
+
+import org.openqa.selenium.WebDriver;
+
+import myUtilities.Utilities;
+
+public class DynamicDD {
+
+	public static void main(String[] args) {
+		WebDriver driver = null;
+		String url = "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login";
+		driver = Utilities.initiateBrowser(driver, url);
+
+	}
+
+}

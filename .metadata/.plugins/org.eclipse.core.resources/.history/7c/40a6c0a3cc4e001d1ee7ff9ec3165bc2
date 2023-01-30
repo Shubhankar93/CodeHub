@@ -1,0 +1,7 @@
+package stringPrograms;
+
+public class AlternateSubStringReverse {
+	public static void main(String[] args) {
+		
+	}
+}

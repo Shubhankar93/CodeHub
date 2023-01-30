@@ -1,0 +1,11 @@
+package dataType;
+
+public class DataTypeExample {
+
+	public static void main(String[] args) {
+		double d  = 10.55 ;
+		int a = d; 
+
+	}
+
+}

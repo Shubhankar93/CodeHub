@@ -1,0 +1,14 @@
+package scroll;
+
+import myUtilities.Utilities;
+
+public class WindowScroll {
+
+	public static void main(String[] args) {
+		WebDriver driver;
+		static String url = "https://www.globalsqa.com/demo-site/draganddrop/";
+		driver = Utilities.initiateBrowser(driver, url);
+
+	}
+
+}
