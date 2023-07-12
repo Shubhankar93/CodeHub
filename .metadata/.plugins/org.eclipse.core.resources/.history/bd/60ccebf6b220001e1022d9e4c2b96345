@@ -96,7 +96,6 @@ public class TestBase {
 		chromeOptions.addArguments("--test-type");
 		//chromeOptions.addArguments("--headless");
 		chromeOptions.setExperimentalOption("excludeSwitches", Collections.singletonList("enable-automation"));*/
-		//Here I am tetsing something 
 
 		if (System.getProperty("os.name").contains("Window")) {
 			if (browser.equals("chrome")) {
