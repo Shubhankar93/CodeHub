@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [test_suite]">
+<suite name="Failed suite [test_suite]" guice-stage="DEVELOPMENT">
   <test name="Loan(failed)">
     <parameter name="uid" value="Admin"/>
     <parameter name="pass" value="admin123"/>

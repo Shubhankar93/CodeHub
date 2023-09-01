@@ -122,8 +122,8 @@ public class TestBase {
 			}
 		} else if (System.getProperty("os.name").contains("Mac")) {
 			if (browser.equals("chrome")) {
-				System.out.println(System.getProperty("user.dir"));
-				System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/drivers/chromedriver");
+				//System.out.println(System.getProperty("user.dir"));
+				//System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/drivers/chromedriver");
 				driver = new ChromeDriver();
 				implicitWait();
 				// driver = new EventFiringWebDriver(dr);
