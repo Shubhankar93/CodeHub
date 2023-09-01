@@ -9,4 +9,4 @@ Feature: Automation User Entry
 
     Examples: 
       | FirstName | LastName | Country |
-      | John      | Smith    | Europe  |
+      | Shubhankar      | Ghosh    | Europe  |

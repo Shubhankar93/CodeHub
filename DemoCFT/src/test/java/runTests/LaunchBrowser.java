@@ -27,7 +27,7 @@ public class LaunchBrowser {
 		//options.setBrowserVersion("117");
 		WebDriver driver = new ChromeDriver(options);
 		driver.manage().window().maximize();
-		driver.get("https://file-examples.com/index.php/sample-documents-download/sample-pdf-download/");
+		driver.get("https://omayo.blogspot.com/");
 		//Thread.sleep(5000);
 		WebElement element = driver.findElement(By.xpath("//*[@id='table-files']/tbody/tr[1]/td[5]/a"));
 		JavascriptExecutor js = (JavascriptExecutor) driver;

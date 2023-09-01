@@ -34,7 +34,6 @@ public class TestNGListener implements ITestListener, ISuiteListener {
 	Properties properties = Settings.getInstance();
 	static Logger log = Logger.getLogger(TestNGListener.class);
 
-	@Override
 	public void onStart(ISuite suite) {
 
 		if ((Boolean.parseBoolean(properties.getProperty("SaveReports")))) {
@@ -43,7 +42,6 @@ public class TestNGListener implements ITestListener, ISuiteListener {
 		}
 	}
 
-	@Override
 	public void onFinish(ISuite suite) {
 		if ((Boolean.parseBoolean(properties.getProperty("SaveReports")))) {
 			copyReportsFolder();
