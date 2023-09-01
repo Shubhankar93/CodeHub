@@ -6,6 +6,6 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="E:/MyWorkspace/jar_files/java-json.jar"/>
+	<classpathentry kind="lib" path="/Users/shubhankar/AutomationRoof/CodeHub/CoreJava/jars/java-json.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
