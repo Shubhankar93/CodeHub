@@ -35,10 +35,10 @@ public class LoginPage extends Page {
 	}
 
 	public void launchAPP() {
-		String driverPath = System.getProperty("user.dir") + "\\Drivers\\chromedriver.exe";
-		System.out.println(driverPath);
-		System.setProperty("webdriver.chrome.driver", driverPath);
-		WebDriver driver = new ChromeDriver();
+//		String driverPath = System.getProperty("user.dir") + "\\Drivers\\chromedriver.exe";
+//		System.out.println(driverPath);
+//		System.setProperty("webdriver.chrome.driver", driverPath);
+//		WebDriver driver = new ChromeDriver();
 		String appURL = "https://opensource-demo.orangehrmlive.com/index.php/auth/login";
 		driver.get(appURL);
 	}

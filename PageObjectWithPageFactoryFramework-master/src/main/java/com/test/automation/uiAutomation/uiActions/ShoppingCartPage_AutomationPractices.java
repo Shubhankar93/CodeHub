@@ -1,5 +1,6 @@
 package com.test.automation.uiAutomation.uiActions;
 
+import java.time.Duration;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -28,7 +29,7 @@ public class ShoppingCartPage_AutomationPractices extends TestBase{
 	public ArrayList<String> getPriceOfProductsFromShoppingCart() {
 
 		ArrayList<String> prices = new ArrayList<String>();
-		waitForElement(driver,driver.findElement(By.xpath("//*[@id='cart_summary']/tbody/tr")), 120);
+		waitForElement(driver,driver.findElement(By.xpath("//*[@id='cart_summary']/tbody/tr")), Duration.ofSeconds(120));
 		int rows = driver.findElements(By.xpath(".//*[@id='cart_summary']/tbody/tr")).size();
 		for (int i = 1; i <= rows; i++) {
 

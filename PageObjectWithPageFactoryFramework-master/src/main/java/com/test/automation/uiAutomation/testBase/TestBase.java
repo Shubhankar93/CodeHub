@@ -7,6 +7,7 @@ import java.lang.reflect.Method;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.text.SimpleDateFormat;
+import java.time.Duration;
 import java.util.Calendar;
 import java.util.Collections;
 import java.util.GregorianCalendar;
@@ -164,7 +165,7 @@ public class TestBase {
 		return data;
 	}
 
-	public void waitForElement(WebDriver driver, int timeOutInSeconds, WebElement element) {
+	public void waitForElement(WebDriver driver, Duration timeOutInSeconds, WebElement element) {
 		WebDriverWait wait = new WebDriverWait(driver, timeOutInSeconds);
 		wait.until(ExpectedConditions.visibilityOf(element));
 	}
@@ -320,7 +321,7 @@ public class TestBase {
 		extent.flush();
 	}
 
-	public WebElement waitForElement(WebDriver driver, WebElement element, long timeOutInSeconds) {
+	public WebElement waitForElement(WebDriver driver, WebElement element, Duration timeOutInSeconds) {
 		WebDriverWait wait = new WebDriverWait(driver, timeOutInSeconds);
 		wait.until(ExpectedConditions.elementToBeClickable(element));
 		return element;
@@ -335,7 +336,7 @@ public class TestBase {
 				// System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")
 				// + "/drivers/chromedriver");
 				System.out.println(" Executing on CHROME");
-				DesiredCapabilities cap = DesiredCapabilities.chrome();
+				DesiredCapabilities cap = new DesiredCapabilities();
 				cap.setBrowserName("chrome");
 				String Node = "http://localhost:5001/wd/hub";
 				driver = new RemoteWebDriver(new URL(Node), cap);
@@ -348,14 +349,14 @@ public class TestBase {
 				// "/drivers/geckodriver.exe");
 				System.out.println(" Executing on FireFox");
 				String Node = "http://172.16.123.130:5000/wd/hub";
-				DesiredCapabilities cap = DesiredCapabilities.firefox();
+				DesiredCapabilities cap = new DesiredCapabilities();
 				cap.setBrowserName("firefox");
 				driver = new RemoteWebDriver(new URL(Node), cap);
 				loadData();
 				getUrl(OR.getProperty("url"));
 			} else if (browser.equalsIgnoreCase("ie")) {
 				System.out.println(" Executing on IE");
-				DesiredCapabilities cap = DesiredCapabilities.chrome();
+				DesiredCapabilities cap = new DesiredCapabilities();
 				cap.setBrowserName("ie");
 				String Node = "http://192.168.0.101:5555/wd/hub";
 				driver = new RemoteWebDriver(new URL(Node), cap);
@@ -373,7 +374,7 @@ public class TestBase {
 				System.setProperty("webdriver.chrome.driver",
 						System.getProperty("user.dir") + "/drivers/chromedriver.exe");
 				System.out.println(" Executing on CHROME");
-				DesiredCapabilities cap = DesiredCapabilities.chrome();
+				DesiredCapabilities cap = new DesiredCapabilities();
 				cap.setBrowserName("chrome");
 				String Node = "http://localhost:5555/wd/hub";
 				driver = new RemoteWebDriver(new URL(Node), cap);
@@ -387,14 +388,14 @@ public class TestBase {
 						System.getProperty("user.dir") + "/drivers/geckodriver.exe");
 				System.out.println(" Executing on FireFox");
 				String Node = "http://172.16.123.130:5554/wd/hub";
-				DesiredCapabilities cap = DesiredCapabilities.firefox();
+				DesiredCapabilities cap = new DesiredCapabilities();
 				cap.setBrowserName("firefox");
 				driver = new RemoteWebDriver(new URL(Node), cap);
 				loadData();
 				getUrl(OR.getProperty("url"));
 			} else if (browser.equalsIgnoreCase("ie")) {
 				System.out.println(" Executing on IE");
-				DesiredCapabilities cap = DesiredCapabilities.chrome();
+				DesiredCapabilities cap =  new DesiredCapabilities();
 				cap.setBrowserName("ie");
 				String Node = "http://192.168.0.101:5555/wd/hub";
 				driver = new RemoteWebDriver(new URL(Node), cap);

@@ -1,5 +1,7 @@
 package com.test.automation.uiAutomation.uiActions;
 
+import java.time.Duration;
+
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -115,7 +117,7 @@ public class ProductDetails_AutomationPractices extends TestBase {
 	 */
 	public void clickOnProduct(String data){
 		WebElement object = driver.findElement(By.xpath("//*[contains(text(),'"+data+"')]"));
-		waitForElement(driver,object, 120);
+		waitForElement(driver,object, Duration.ofSeconds(120));
 		Actions action = new Actions(driver);
 		action.moveToElement(object).build().perform();
 		driver.findElement(By.xpath(".//*[@id='center_column']/ul/li/div/div[2]/div[2]/a[1]/span")).click();
@@ -127,7 +129,7 @@ public class ProductDetails_AutomationPractices extends TestBase {
 	 */
 	public String getProductPrice(){
 		WebElement itemprice1 = driver.findElement(By.xpath(".//*[@id='layer_cart']/div[1]/div[1]/div[2]/div[2]/strong/following-sibling::*"));
-		waitForElement(driver,itemprice1, 120);
+		waitForElement(driver,itemprice1, Duration.ofSeconds(120));
 		return itemprice1.getText();
 	}
 	
@@ -146,7 +148,7 @@ public class ProductDetails_AutomationPractices extends TestBase {
 	 */
 	public void clickOnContinueShopping(){
 		WebElement continueBtn = driver.findElement(By.xpath("//*[@id='layer_cart']/div[1]/div[2]/div[4]/span/span/i"));
-		waitForElement(driver,continueBtn, 120);
+		waitForElement(driver,continueBtn, Duration.ofSeconds(120));
 		continueBtn.click();
 	}
 	
@@ -155,7 +157,7 @@ public class ProductDetails_AutomationPractices extends TestBase {
 	 */
 	public void clickOnProceedToCheckOut(){
 		WebElement ProcCheckOutBtn = driver.findElement(By.xpath("//*[@id='layer_cart']/div[1]/div[2]/div[4]/a/span"));
-		waitForElement(driver,ProcCheckOutBtn, 120);
+		waitForElement(driver,ProcCheckOutBtn, Duration.ofSeconds(120));
 		ProcCheckOutBtn.click();
 	}
 
