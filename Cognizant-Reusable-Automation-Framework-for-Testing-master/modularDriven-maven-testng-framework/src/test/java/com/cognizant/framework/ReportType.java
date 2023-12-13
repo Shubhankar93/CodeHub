@@ -24,7 +24,7 @@ interface ReportType {
 	/**
 	 * Function to initialize the test log
 	 */
-	public void initializeTestLog();
+	public void initializeTestLog();;
 
 	/**
 	 * Function to add a heading to the test log

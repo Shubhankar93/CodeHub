@@ -1,4 +1,4 @@
-package runTests;
+package waits;
 
 import java.time.Duration;
 import java.time.LocalDateTime;
@@ -11,7 +11,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 
-public class IsRadioButtonDisplayed {
+public class ImplicitlyWait {
 
 	public static void main(String[] args) {
 		
@@ -27,7 +27,9 @@ public class IsRadioButtonDisplayed {
 		try {
 			LocalDateTime startTime = LocalDateTime.now();  
 			System.out.println("Start Time - " + dtf.format(startTime));
+			Thread.sleep(5000);
 			WebElement element = driver.findElement(By.xpath("//*[@id='radio22']"));
+			
 			System.out.println(element.isDisplayed());
 		
 		}catch(Exception ex){
