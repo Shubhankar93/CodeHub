@@ -5,7 +5,7 @@ import java.util.HashMap;
 public class OccurenceOfCharacter {
 
 	public static void main(String[] args) {
-		String str = "SSDRRRTTYYTYTRP";
+		String str = "SSDRRRTTYYTYTRPP";
 	      HashMap <Character, Integer> hMap = new HashMap<>();
 	      for (int i = str.length() - 1; i >= 0; i--) {
 	         if (hMap.containsKey(str.charAt(i))) {
