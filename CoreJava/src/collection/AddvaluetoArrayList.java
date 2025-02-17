@@ -1,10 +1,12 @@
 package collection;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
+import java.util.List;
 
 
-public class ArrayList_Demo {
+public class AddvaluetoArrayList {
 
 	public static void main(String[] args) {
 		ArrayList<String> ls = new ArrayList<String>();
@@ -15,6 +17,7 @@ public class ArrayList_Demo {
 		ls.add("15");
 		//Collections.sort(ls);
 		System.out.println(ls);
+		
 		
 	}
 

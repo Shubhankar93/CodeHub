@@ -14,6 +14,7 @@ public class HasSet_Demo {
 		hs.add(60);
 		System.out.println(hs);
 		
+		
 
 	}
 
