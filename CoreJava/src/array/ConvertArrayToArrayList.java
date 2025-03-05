@@ -16,7 +16,8 @@ public class ConvertArrayToArrayList {
 //		System.out.println(list);
 		
 		int a[] = {12,11,3,22,6,50,66,2};
-		Arrays.asList(a);
+		System.out.println(Arrays.asList(a));
+		
 		
 
 	}
