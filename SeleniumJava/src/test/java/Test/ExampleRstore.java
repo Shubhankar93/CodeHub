@@ -25,5 +25,6 @@ public class ExampleRstore {
 		System.setProperty("webdriver.chrome.driver", driverPath);
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://www.google.com/");
+		
 	}
 }
