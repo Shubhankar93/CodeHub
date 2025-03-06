@@ -1,5 +1,7 @@
 package Test;
 
+//Testing Something
+
 public class Test5 {
 	 static int i;
 	public void setValue(int j) {
@@ -7,11 +9,6 @@ public class Test5 {
 		this.i = j ;
 
 	}
-	
-	
-	
-	
-	
 	public static void main(String[] args) {
 		Test5 obj1 = new Test5();
 		obj1.setValue(10);
